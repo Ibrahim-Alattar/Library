@@ -34,23 +34,23 @@
       <input type="text" name="readStatus" id="readStatus" placeholder="Have you read it yet?" required>
     </div>
 
-    <!-- Book Cover Upload -->
     <div class="form-control">
       <label for="bookCover">Book Cover</label>
       <input type="file" name="bookCover" id="bookCover" accept="image/*">
     </div>
 
-    <!-- Book File Upload -->
     <div class="form-control">
       <label for="bookFile">Upload Book</label>
       <input type="file" name="bookFile" id="bookFile" accept=".pdf,.epub,.doc,.docx">
     </div>
 
+    <p id="message"></p>
+
     <button id="addBook">Add Book</button>
   </section>
   <section class="books-container">
-
     <section class="book-card">
+      <div class="close">X</div>
       <div class="book-cover">
         <img src="cover.jpg" alt="Book Cover">
       </div>

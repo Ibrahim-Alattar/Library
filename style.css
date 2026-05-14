@@ -87,11 +87,16 @@ button:hover {
     0 8px 24px rgba(91, 140, 255, 0.35);
 }
 
+#message {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
 /* books container */
 
 .books-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   gap: .8rem;
   padding: 20px;
 }
@@ -105,15 +110,9 @@ button:hover {
     0 10px 30px rgba(0, 0, 0, 0.35);
   color: white;
   overflow: hidden;
-
-  @media (min-width: 720px) {
-    max-width: 300px;
-  }
+  position: relative;
 }
 
-.book-card:hover {
-  transform: translateY(-5px);
-}
 
 .book-cover img {
   width: 100%;
@@ -146,4 +145,21 @@ button:hover {
 
 .book-file a:hover {
   text-decoration: underline;
+}
+
+.close {
+  position: fixed;
+  color: red;
+  font-size: 40px;
+  z-index: 9;
+  font-weight: 800;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  right: 2%;
+}
+
+.close:hover {
+  transform: translateY(-5px);
 }
