@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h2>My Library</h2>
+    <button id="createBook">Add New Book</button>
+  </header>
+  <section id="form">
+    <div class="form-control">
+      <label for="author">Author name</label>
+      <input type="text" name="author" id="author" placeholder="Enter the author name" required>
+    </div>
+
+    <div class="form-control">
+      <label for="title">Book Title</label>
+      <input type="text" name="title" id="title" placeholder="Enter the book title" required>
+    </div>
+
+    <div class="form-control">
+      <label for="pagesNumber">Pages number</label>
+      <input type="number" name="pagesNumber" id="pagesNumber" placeholder="Enter pages number" required>
+    </div>
+
+    <div class="form-control">
+      <label for="readStatus">Read Status</label>
+      <input type="text" name="readStatus" id="readStatus" placeholder="Have you read it yet?" required>
+    </div>
+
+    <!-- Book Cover Upload -->
+    <div class="form-control">
+      <label for="bookCover">Book Cover</label>
+      <input type="file" name="bookCover" id="bookCover" accept="image/*">
+    </div>
+
+    <!-- Book File Upload -->
+    <div class="form-control">
+      <label for="bookFile">Upload Book</label>
+      <input type="file" name="bookFile" id="bookFile" accept=".pdf,.epub,.doc,.docx">
+    </div>
+
+    <button id="addBook">Add Book</button>
+  </section>
+  <section class="books-container">
+
+    <section class="book-card">
+      <div class="book-cover">
+        <img src="cover.jpg" alt="Book Cover">
+      </div>
+
+      <div class="book-details">
+        <h2 class="book-title">Atomic Habits</h2>
+
+        <p>
+          <strong>Author:</strong>
+          James Clear
+        </p>
+
+        <p>
+          <strong>Pages:</strong>
+          320
+        </p>
+
+        <p>
+          <strong>Read Status:</strong>
+          Finished
+        </p>
+
+        <div class="book-file">
+          <strong>Book File:</strong>
+          <a href="books/atomic-habits.pdf" target="_blank">
+            View / Download
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>
