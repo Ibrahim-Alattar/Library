@@ -7,6 +7,7 @@ const fileInput = document.querySelector("#bookFile");
 const message = document.querySelector("#message");
 const cardsContainer = document.querySelector(".books-container");
 const deleteElement = document.getElementById("close")
+const overlay = document.querySelector(".overlay")
 const myLibrary = [];
 
 function showMessage(text, color) {
@@ -82,7 +83,14 @@ const form = document.getElementById("form");
 
 createNewBook.addEventListener("click", function () {
   form.classList.toggle("closed");
+  overlay.classList.toggle("opened")
 });
+
+overlay.addEventListener("click", function () {
+  form.classList.toggle("closed");
+  overlay.classList.toggle("opened")
+})
+
 addBook.addEventListener("click", function () {
   if (validateInputs()) {
     addBookToLibrary(
@@ -119,3 +127,7 @@ function addBookToLibrary(
   const book = new Book(author, title, numberOfPages, readStatus, cover, file);
   myLibrary.push(book);
 }
+
+
+
+
