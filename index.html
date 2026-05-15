@@ -31,7 +31,12 @@
 
     <div class="form-control">
       <label for="readStatus">Read Status</label>
-      <input type="text" name="readStatus" id="readStatus" placeholder="Have you read it yet?" required>
+
+      <div class="read-toggle">
+        <input type="checkbox" id="readStatus">
+        <label for="readStatus" class="toggle"></label>
+        <span id="statusLabel">Not Read</span>
+      </div>
     </div>
 
     <div class="form-control">
