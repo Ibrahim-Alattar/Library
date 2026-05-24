@@ -1,0 +1,41 @@
+[33mcommit 258e5e1887cac7cd7d3e9371103937655d5416e1[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/using-class[m[33m, [m[1;31morigin/new-features[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32musing-class[m[33m, [m[1;32mnew-features[m[33m)[m
+Author: ibrahim <ibrahimalattar2003@gmail.com>
+Date:   Fri May 15 19:13:47 2026 +0300
+
+    The final project
+
+[33mcommit d7167c4b4b8c9493b8fb2aa2a182b29da6fd5367[m
+Author: ibrahim <ibrahimalattar2003@gmail.com>
+Date:   Fri May 15 18:27:08 2026 +0300
+
+    fixed the displayContent function, it reads from the array now!
+
+[33mcommit a1d72778310c96632d673512e531cf9dc8e027f1[m
+Author: ibrahim <ibrahimalattar2003@gmail.com>
+Date:   Fri May 15 17:02:08 2026 +0300
+
+    Add overlay
+
+[33mcommit b31d68a464506cf44e403466742fbbc40f2de378[m
+Author: ibrahim <ibrahimalattar2003@gmail.com>
+Date:   Thu May 14 21:27:08 2026 +0300
+
+    The last Update
+
+[33mcommit 2e031ee7d38878cab7208a68672369cfb9e0dba7[m
+Author: ibrahim <ibrahimalattar2003@gmail.com>
+Date:   Thu May 14 21:11:53 2026 +0300
+
+    Finish library project
+
+[33mcommit 0dbf89fd1eccb280cd240fba93b6f8d64ed5cfb1[m
+Author: ibrahim <ibrahimalattar2003@gmail.com>
+Date:   Thu May 14 21:08:39 2026 +0300
+
+    Finished JS
+
+[33mcommit 7498d695780a04638ed758661b8108fe778632e3[m
+Author: ibrahim <ibrahimalattar2003@gmail.com>
+Date:   Thu May 14 19:45:58 2026 +0300
+
+    Finished UI

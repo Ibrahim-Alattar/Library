@@ -76,28 +76,21 @@ function validateInputs() {
 // readStatus is a boolean: true = Read, false = Not Read.
 // ======================================================
 
-function Book(author, title, numberOfPages, readStatus, cover, file) {
-  this.id = crypto.randomUUID();
-  this.author = author;
-  this.title = title;
-  this.numberOfPages = numberOfPages;
-  this.readStatus = readStatus; // boolean
-  this.cover = cover;      // object URL (temporary, lives as long as the page is open)
-  this.file = file;       // object URL
+class Book {
+  constructor(author, title, numberOfPages, readStatus, cover, file) {
+    this.id = crypto.randomUUID();
+    this.author = author;
+    this.title = title;
+    this.numberOfPages = numberOfPages;
+    this.readStatus = readStatus;
+    this.cover = cover;
+    this.file = file;
+  }
+
+  toggleReadStatus() {
+    this.readStatus = !this.readStatus;
+  }
 }
-
-// ======================================================
-// toggleReadStatus — Book Prototype Method
-// This function lives on Book.prototype, which means
-// every book object automatically has access to it.
-// It flips readStatus between true and false.
-//
-// Usage: someBook.toggleReadStatus()
-// ======================================================
-
-Book.prototype.toggleReadStatus = function () {
-  this.readStatus = !this.readStatus;
-};
 
 // ======================================================
 // addBookToLibrary
